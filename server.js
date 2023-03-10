@@ -25,10 +25,6 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-app.get("/movies", (req, res) => {
-  res.sendFile(__dirname + "/public/movies.html");
-});
-
 app.get("/movie/:id", (req, res) => {
   const id = req.params.id;
   let movie
